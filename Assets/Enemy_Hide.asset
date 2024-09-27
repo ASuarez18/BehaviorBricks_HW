@@ -16,15 +16,12 @@ MonoBehaviour:
   xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
     version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
     id=\"0\" guid=\"17f4d4c89caf87348b52f5e27a899b47\" nextId=\"7\">\r\n      <root>\r\n       
-    <RepeatDecorator id=\"1\" />\r\n      </root>\r\n      <inputParams>\r\n       
+    <RandomSelectorNode id=\"4\" />\r\n      </root>\r\n      <inputParams>\r\n       
     <inputValues>\r\n          <entry name=\"HideZone3\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"False\" />\r\n          <entry name=\"HideZone2\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"False\" />\r\n          <entry name=\"HideZone1\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"False\" />\r\n        </inputValues>\r\n      </inputParams>\r\n     
-    <outputParams />\r\n      <localParams />\r\n    </BehaviorTree>\r\n    <RepeatDecorator
-    id=\"1\" loops=\"-1\" policy=\"ContinueWhenChildFails\">\r\n      <child>\r\n       
-    <RandomSelectorNode id=\"4\" />\r\n      </child>\r\n      <inputParams />\r\n     
-    <outputParams />\r\n      <localParams />\r\n    </RepeatDecorator>\r\n    <RandomSelectorNode
+    <outputParams />\r\n      <localParams />\r\n    </BehaviorTree>\r\n    <RandomSelectorNode
     id=\"4\">\r\n      <probs>\r\n        <elem>1</elem>\r\n        <elem>1</elem>\r\n       
     <elem>1</elem>\r\n      </probs>\r\n      <children>\r\n        <elem>\r\n         
     <ActionNode id=\"5\" />\r\n        </elem>\r\n        <elem>\r\n          <ActionNode
@@ -45,40 +42,33 @@ MonoBehaviour:
     </inputParams>\r\n      <outputParams />\r\n      <localParams />\r\n    </ActionNode>\r\n 
     </runtimeInfo>\r\n  <editorInfo>\r\n    <BehaviorTree id=\"0\" _name=\"Enemy_Hide\"
     _description=\"\" _removeIfClosed=\"False\">\r\n      <_rootList>\r\n       
-    <elem>\r\n          <RepeatDecorator id=\"1\" />\r\n        </elem>\r\n       
     <elem>\r\n          <ActionNode id=\"3\" />\r\n        </elem>\r\n        <elem>\r\n         
     <RandomSelectorNode id=\"4\" />\r\n        </elem>\r\n        <elem>\r\n         
     <ActionNode id=\"5\" />\r\n        </elem>\r\n        <elem>\r\n          <ActionNode
     id=\"6\" />\r\n        </elem>\r\n      </_rootList>\r\n      <_nodes>\r\n       
-    <nodes>\r\n          <RepeatDecorator id=\"1\" />\r\n          <ActionNode id=\"5\"
-    />\r\n          <ActionNode id=\"3\" />\r\n          <RandomSelectorNode id=\"4\"
-    />\r\n          <ActionNode id=\"6\" />\r\n        </nodes>\r\n      </_nodes>\r\n   
-    </BehaviorTree>\r\n    <RepeatDecorator id=\"1\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"288 68\" name=\"Repeat\"
-    description=\"Repeats the execution of its child node\" cardinality=\"1\" hasParent=\"False\">\r\n         
-    <BehaviorTree id=\"0\" />\r\n          <RepeatDecorator id=\"1\" />\r\n       
-    </data>\r\n      </_data>\r\n    </RepeatDecorator>\r\n    <RandomSelectorNode
+    <nodes>\r\n          <ActionNode id=\"5\" />\r\n          <ActionNode id=\"3\"
+    />\r\n          <RandomSelectorNode id=\"4\" />\r\n          <ActionNode id=\"6\"
+    />\r\n        </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n    <RandomSelectorNode
     id=\"4\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"252 193\" name=\"Random Selector\" description=\"Selects randomly
-    one of its children\" cardinality=\"-1\" hasParent=\"True\">\r\n          <BehaviorTree
-    id=\"0\" />\r\n          <RandomSelectorNode id=\"4\" />\r\n          <RepeatDecorator
-    id=\"1\" />\r\n        </data>\r\n      </_data>\r\n    </RandomSelectorNode>\r\n   
+    position=\"363.875 237\" name=\"Random Selector\" description=\"Selects randomly
+    one of its children\" cardinality=\"-1\" hasParent=\"False\">\r\n          <RandomSelectorNode
+    id=\"4\" />\r\n        </data>\r\n      </_data>\r\n    </RandomSelectorNode>\r\n   
     <ActionNode id=\"5\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
-    position=\"104 364\" name=\"Navigation/MoveToGameObject\" description=\"Moves
+    position=\"215.875 408\" name=\"Navigation/MoveToGameObject\" description=\"Moves
     the game object towards a given target by using a NavMeshAgent\" cardinality=\"0\"
     hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n          <ActionNode
     id=\"5\" />\r\n          <RandomSelectorNode id=\"4\" />\r\n        </data>\r\n     
     </_data>\r\n    </ActionNode>\r\n    <ActionNode id=\"3\">\r\n      <_data>\r\n       
-    <data breakpoint=\"0\" selected=\"False\" position=\"349 365\" name=\"Navigation/MoveToGameObject\"
+    <data breakpoint=\"0\" selected=\"False\" position=\"460.875 409\" name=\"Navigation/MoveToGameObject\"
     description=\"Moves the game object towards a given target by using a NavMeshAgent\"
     cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <ActionNode id=\"3\" />\r\n          <RandomSelectorNode id=\"4\" />\r\n       
     </data>\r\n      </_data>\r\n    </ActionNode>\r\n    <ActionNode id=\"6\">\r\n     
-    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"611 363\"
-    name=\"Navigation/MoveToGameObject\" description=\"Moves the game object towards
-    a given target by using a NavMeshAgent\" cardinality=\"0\" hasParent=\"True\">\r\n         
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"722.875
+    407\" name=\"Navigation/MoveToGameObject\" description=\"Moves the game object
+    towards a given target by using a NavMeshAgent\" cardinality=\"0\" hasParent=\"True\">\r\n         
     <BehaviorTree id=\"0\" />\r\n          <ActionNode id=\"6\" />\r\n          <RandomSelectorNode
     id=\"4\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n  </editorInfo>\r\n</BehaviorBricks>"
-  zoom: 1
+  zoom: 0.8
   subslist: []
   _guid: 17f4d4c89caf87348b52f5e27a899b47

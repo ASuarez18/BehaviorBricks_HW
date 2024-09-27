@@ -15,7 +15,7 @@ MonoBehaviour:
   brickName: Assets/DayNightCycle.asset
   xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
     version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
-    id=\"0\" guid=\"553378e649041534785079084c61427d\" nextId=\"16\">\r\n      <root>\r\n       
+    id=\"0\" guid=\"553378e649041534785079084c61427d\" nextId=\"17\">\r\n      <root>\r\n       
     <RepeatDecorator id=\"4\" />\r\n      </root>\r\n      <inputParams>\r\n       
     <inputValues>\r\n          <entry name=\"HideZone\" type=\"UnityEngine.GameObject\"
     isBlackboard=\"False\" />\r\n        </inputValues>\r\n      </inputParams>\r\n     
@@ -44,26 +44,26 @@ MonoBehaviour:
     <RepeatDecorator id=\"4\" />\r\n          <PrioritySelectorNode id=\"9\" />\r\n         
     <SubbehaviorNode id=\"14\" />\r\n          <ConditionEvalNode id=\"15\" />\r\n       
     </nodes>\r\n      </_nodes>\r\n    </BehaviorTree>\r\n    <RepeatDecorator id=\"4\">\r\n     
-    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"525.6667
-    34.00003\" name=\"Repeat\" description=\"Repeats the execution of its child node\"
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"745.7917
+    136\" name=\"Repeat\" description=\"Repeats the execution of its child node\"
     cardinality=\"1\" hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <RepeatDecorator id=\"4\" />\r\n        </data>\r\n      </_data>\r\n    </RepeatDecorator>\r\n   
     <PrioritySelectorNode id=\"9\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"460.6667 163.9999\" name=\"Priority Selector\"
+    selected=\"False\" position=\"680.7917 265.9999\" name=\"Priority Selector\"
     description=\"\" cardinality=\"1\" hasParent=\"True\">\r\n          <BehaviorTree
     id=\"0\" />\r\n          <PrioritySelectorNode id=\"9\" />\r\n          <RepeatDecorator
     id=\"4\" />\r\n        </data>\r\n      </_data>\r\n    </PrioritySelectorNode>\r\n   
     <ConditionEvalNode id=\"15\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
-    selected=\"False\" position=\"421 344\" name=\"MyConditions/IsNight\" description=\"Eval\"
+    selected=\"False\" position=\"641.125 446\" name=\"MyConditions/IsNight\" description=\"Eval\"
     cardinality=\"1\" hasParent=\"True\">\r\n          <BehaviorTree id=\"0\" />\r\n         
     <ConditionEvalNode id=\"15\" />\r\n          <PrioritySelectorNode id=\"9\" />\r\n       
     </data>\r\n      </_data>\r\n    </ConditionEvalNode>\r\n    <SubbehaviorNode
-    id=\"14\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"True\"
-    position=\"421 344\" name=\"Enemy_Hide\" description=\"\" cardinality=\"-1\"
+    id=\"14\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"641.125 446\" name=\"Enemy_Hide\" description=\"\" cardinality=\"-1\"
     hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n          <SubbehaviorNode
     id=\"14\" />\r\n        </data>\r\n      </_data>\r\n    </SubbehaviorNode>\r\n 
     </editorInfo>\r\n</BehaviorBricks>"
-  zoom: 1
+  zoom: 0.8
   subslist:
   - {fileID: 11400000, guid: 17f4d4c89caf87348b52f5e27a899b47, type: 2}
   _guid: 553378e649041534785079084c61427d
